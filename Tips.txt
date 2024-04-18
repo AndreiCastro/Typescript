@@ -1,0 +1,21 @@
+Commands NPM:
+	- npm i -g typescript: Install typescript globalmente.
+
+	- tsc --version:    Show typescript version  
+==================================================================================================================================
+TypeScript:
+    - O navegador só compila código em JavaScript, pra isso temos que converte o file Typescript in JavaScript:
+        
+        - tsc --init: Create a file tsconfig.json that is the configuration file of typescript
+
+        - tsc fileTypeScriptName.ts: Irá gerar a file js correspondente ao seu arquivo ts.
+
+        - tsc fileTypeScriptName.ts --watch: Serve para toda vez that change the ts file refletir automaticamente on the js file.
+
+        - tsc --watch: Create all files in js of files ts. 
+          PS: Para esse command funcionar, must have the file tsconfig.json, que is created no command tsc --init.
+
+        - npm i --save-dev typescript: For to create the package.json file and colocar the typescript como uma dependencia do projeto.
+          PS: Coloca sempre --save-dev, pois o ts só servira para environment developer
+
+
