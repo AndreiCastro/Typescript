@@ -14,6 +14,7 @@ TypeScript:
 
         - tsc --watch: Create all files in js of files ts. 
           PS: Para esse command funcionar, must have the file tsconfig.json, que is created no command tsc --init.
+          Sempre que alterar algo no file ts, rodar esse comando que altera no file js.
 
         - npm i --save-dev typescript: For to create the package.json file and colocar the typescript como uma dependencia do projeto.
           PS: Coloca sempre --save-dev, pois o ts só servira para environment developer

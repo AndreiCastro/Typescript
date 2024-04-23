@@ -1,8 +1,9 @@
 {
   "name": "typescript",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
-  "main": "app.js",
+  "main": "app.js",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,4 +13,6 @@
   "devDependencies": {
     "typescript": "^5.4.5"
   }
+
+  
 }

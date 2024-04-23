@@ -1,3 +1,3 @@
 "use strict";
-const nome = 'Andrei';
+const nome = 'Teste App';
 console.log(nome);
