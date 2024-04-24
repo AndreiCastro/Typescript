@@ -4,3 +4,4 @@ import { Telefone } from "./models/cliente/telefone.model.js";
 let cliente = new Cliente('Andrei', 32, [new Telefone('11', 12345678)], new Endereco('Teste', '458'));
 cliente.falar();
 cliente.mostrarTelefone();
+// Sempre que tiver função utilize class, mas se for soemnte com propriedades usar uma interface
