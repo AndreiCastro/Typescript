@@ -5,18 +5,34 @@ Commands NPM:
 ==================================================================================================================================
 TypeScript:
     - O navegador só compila código em JavaScript, pra isso temos que converte o file Typescript in JavaScript:
-        
-        - tsc --init: Create a file tsconfig.json that is the configuration file of typescript
+     
+    - tsconfig
+	"target": "version" : Where have the version that the typescript irá to convert files in JavaScript.
 
-        - tsc fileTypeScriptName.ts: Irá gerar a file js correspondente ao seu arquivo ts.
+	"include":[file.ts] : Será converted only the files especificados dentro do array, without the include are all file ts are converted for Js.
 
-        - tsc fileTypeScriptName.ts --watch: Serve para toda vez that change the ts file refletir automaticamente on the js file.
+	"exclude":[] : same things that include, but serve for não gerar the Js of the files especificados.
 
-        - tsc --watch: Create all files in js of files ts. 
-          PS: Para esse command funcionar, must have the file tsconfig.json, que is created no command tsc --init.
-          Sempre que alterar algo no file ts, rodar esse comando que altera no file js.
+	"files":[] : same things that include, but it overwrite the exclude. The files inside tag files are compiled first than the tag include.
 
-        - npm i --save-dev typescript: For to create the package.json file and colocar the typescript como uma dependencia do projeto.
-          PS: Coloca sempre --save-dev, pois o ts só servira para environment developer
+	"outDir": "./dist" : Compila all code in Js and create and add all in the folder dist
+
+	"outFile": ".dist/final.js" : Compila all ts e add only in a single file called final.js
+==================================================================================================================================
+Commands:
+    - tsc --init: Create a file tsconfig.json that is the configuration file of typescript
+
+    - tsc fileTypeScriptName.ts: Irá gerar a file js correspondente ao seu arquivo ts.
+
+    - tsc fileTypeScriptName.ts --watch: Serve para toda vez that change the ts file refletir automaticamente on the js file.
+
+    - tsc --watch: Create all files in js of files ts. 
+      PS: Para esse command funcionar, must have the file tsconfig.json, que is created no command tsc --init.
+      Sempre que alterar algo no file ts, rodar esse comando que altera no file js.
+
+    - npm i --save-dev typescript: For to create the package.json file and colocar the typescript como uma dependencia do projeto.
+      PS: Coloca sempre --save-dev, pois o ts só servira para environment developer
+
+	
 
 
